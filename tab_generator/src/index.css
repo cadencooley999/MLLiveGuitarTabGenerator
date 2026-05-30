@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* For Chrome, Safari, and Edge */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1410; /* Match your component background */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #5a4636; /* Muted brown */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d9a066; /* Highlight color when hovering */
+  }
+
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #5a4636 #1a1410;
+  }
+}
