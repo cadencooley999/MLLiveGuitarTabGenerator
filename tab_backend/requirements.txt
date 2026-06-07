@@ -1,5 +1,6 @@
-anyio==4.2.0
+anyio==4.8.0
 fastapi==0.136.1
 librosa==0.11.0
-numpy==2.4.4
+numpy==2.2.0
 torch==2.11.0
+uvicorn[standard]==0.38.0

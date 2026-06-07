@@ -13,6 +13,9 @@ from collections import deque
 from utils.session_state_class import SessionState
 
 app = FastAPI()
+@app.get("/")
+async def health_check():
+    return {"status": "healthy"}
 
 model = TabCNN()
 checkpoint = torch.load("model/weights.pth", map_location="cpu")
