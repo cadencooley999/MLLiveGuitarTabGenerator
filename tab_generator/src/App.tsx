@@ -38,7 +38,7 @@ function App() {
   }, [micPermission])
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8000/ws")
+    const ws = new WebSocket("wss://tab-inference-api-1090208288408.us-central1.run.app/ws");
     ws.onopen = () => {
       console.log("socket connected")
       setSocket(ws)
